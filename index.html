@@ -15,7 +15,7 @@
 		<meta property="og:title" content="Kushiara International Convention Hall | Luxury Event Venue in Sylhet">
 		<meta property="og:description" content="Discover Kushiara International Convention Hall, Sylhet's top venue for weddings, conferences, and special events. Our elegant spaces and professional services make every event memorable.">
 		<meta property="og:image" content="01-min.jpg"> <!-- Replace with the actual image URL -->
-		<meta property="og:url" content="https://www.yourwebsite.com"> <!-- Replace with the actual URL -->
+		<meta property="og:url" content="https://www.kichall.com"> <!-- Replace with the actual URL -->
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="en_US">
 		<meta property="og:site_name" content="Kushiara International Convention Hall">
@@ -25,7 +25,7 @@
 		<meta name="twitter:title" content="Kushiara International Convention Hall | Luxury Event Venue in Sylhet">
 		<meta name="twitter:description" content="Explore the leading event venue in Sylhet, perfect for weddings, corporate events, and more. Experience professional event management and exquisite catering services.">
 		<meta name="twitter:image" content="01-min.jpg"> <!-- Replace with the actual image URL -->
-		<meta name="twitter:url" content="https://www.yourwebsite.com"> <!-- Replace with the actual URL -->
+		<meta name="twitter:url" content="https://www.kichall.com"> <!-- Replace with the actual URL -->
 		<meta name="twitter:site" content="@YourTwitterHandle"> <!-- Replace with your Twitter handle -->
 	
 		<!-- Title -->
@@ -46,9 +46,9 @@
 
 <body>
 
-	<div class="preloader"></div>
-
-
+	<div id="preloader">
+		<img src="images/k_gold.png" alt="Loading...">
+	</div>
 	<header id="header" class="onepage-menu fixed nav-down" style="position: absolute; left: auto;">
 		<div id="header-wrap">
 			<nav id="navbar">
@@ -317,6 +317,18 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		// When the document is fully loaded
+		window.addEventListener('load', function() {
+			// Fade out the preloader
+			document.getElementById('preloader').style.opacity = '0';
+			// After the fade out is complete, hide it
+			setTimeout(function() {
+				document.getElementById('preloader').style.display = 'none';
+			}, 500); // Match the duration with your CSS transition, if any
+		});
+	</script>
+	
 
 </body>
 
